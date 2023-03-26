@@ -4,5 +4,81 @@
 @import 'global';
 
 
+.header {
+    padding: 52px 0;
+    background-color: #fff;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__list-item+.menu__list-item {
+        padding-left: 33px;
+    }
+
+    &__list-link {
+        @extend %rubik-500;
+        font-size: 15px;
+        line-height: 12px;
+        color: $accent;
+    }
+}
+
+// Доделать кнопки
+.user-nav {
+    display: flex;
+    &__link {
+        position: relative;
+        background-color: #fcd7b6;
+    }
+
+    &__link .user-nav__img {
+        padding: 20px 17px 14px 17px;
+    }
+
+    &__link-search {
+        background-color: #edf1f4;
+        margin-right: 21px;
+        width: 51px;
+        border-radius: 50%;
+        align-items: center;
+    }
+
+    &__link-heart {
+        border-radius: 50% 0 0 50%;
+    }
+
+    &__link-cart {
+        border-radius: 0 50% 50% 0;
+    }
+    &__link.user-nav__link-menu {
+        background-color: #a3bbc8;
+        margin-left: 18px;
+        border-radius: 50%;
+    }
+
+    &__num {
+        position: absolute;
+        font-size: 12px;
+        line-height: 18px;
+        color: $usernum;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+        top: 10px;
+        right: 8px;
+    }
+}
+
 
 @import 'media';
