@@ -32,12 +32,11 @@
     }
 }
 
-// Доделать кнопки
 .user-nav {
     display: flex;
     &__link {
         position: relative;
-        background-color: #fcd7b6;
+        background-color: $pink;
     }
 
     &__link .user-nav__img {
@@ -60,7 +59,7 @@
         border-radius: 0 50% 50% 0;
     }
     &__link.user-nav__link-menu {
-        background-color: #a3bbc8;
+        background-color: $btn;
         margin-left: 18px;
         border-radius: 50%;
     }
@@ -80,5 +79,83 @@
     }
 }
 
+
+.footer-top {
+    padding: 80px 0 75px;
+    display: flex;
+    color: $footertext;
+    border-bottom: 1px solid #dae4e9;
+    &__contact {
+        width: 200px;
+        margin-right: 100px;
+    }
+    &__logo {
+        display: block;
+        margin-bottom: 25px;
+    }
+    &__adress,
+    &__phone,
+    &__email {
+        margin-bottom: 10px;
+        display: block;
+    }
+    &__title {
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $footertitle;
+        text-transform: uppercase;
+        padding-top: 16px;
+        margin-bottom: 18px;
+    }
+    &__link {
+        margin-bottom: 10px;
+    }
+    &__services,
+    &__account {
+        width: 170px;
+        margin-right: 130px;
+    }
+    &__newsletter {
+        max-width: 270px;
+    }
+    &__text {
+        margin-bottom: 35px;
+    }
+    &__form-input {
+        max-width: 165px;
+        width: 100%;
+        background-color: $pinklight;
+        padding: 12px 12px 12px 16px;
+        border: none;
+        &::placeholder {
+            @extend %dmsans-400;
+            color: $form;
+        }
+    }
+    &__form-btn {
+        padding: 12px 17px 12px;
+        background-color: $btn;
+        @extend %dmsans-400;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.footer-bottom {
+    padding: 35px 0 35px;
+    display: flex;
+        justify-content: space-between;
+    &__copy {
+        color: $footertext;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    &__item {
+        display: inline-block;
+        padding-left: 30px;
+    }
+}
 
 @import 'media';

@@ -4,10 +4,15 @@ $usernum: #243f4d;
 $grey: #585858;
 $title: #191919;
 $subtitle: #414141;
-$light: #a3bbc8;
+$btn: #a3bbc8;
 $option: #222933;
 $footertitle: #1f2044;
 $footertext: #7b7b7b;
+$form: #234969;
+
+$pink: #fcd7b6;
+$pinkmedium: #feefe2;
+$pinklight: #fef7f0;
 
 
 // fonts
@@ -23,12 +28,17 @@ $footertext: #7b7b7b;
 
 %poppins-700 {
     font-family: 'Poppins-Bold', sans-serif;
-    font-family: 700;
+    font-weight: 700;
+}
+
+%dmsans-400 {
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 400;
 }
 
 %dmsans-500 {
     font-family: 'DMSans-Medium', sans-serif;
-    font-family: 500;
+    font-weight: 500;
 }
 
 %dmsans-700 {
