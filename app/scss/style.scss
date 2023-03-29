@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -157,5 +158,96 @@
         padding-left: 30px;
     }
 }
+
+
+.top-slider {
+    &__inner {
+        background-color: $pink;
+        padding: 225px 300px 45px;
+        position: relative;
+        &::before {
+            content:'';
+            position: absolute;
+            background-image: url('../images/slider/top-slider-bg.png');
+            width: 636px;
+            height: 636px;
+            top: 100px;
+            right: 185px;
+        }
+    }
+    &__item {
+        display: flex !important;
+        justify-content: space-between;
+    }
+    &__content {
+        height: 330px;
+        width: 470px;
+    }
+    &__title {
+        @extend %rubik-500;
+        font-size: 72px;
+        line-height: 70px;
+        color: $usernum;
+        max-width: 470px;
+        margin-bottom: 30px;
+    }
+    &__text {
+        @extend %rubik-400;
+        font-size: 18px;
+        line-height: 30px;
+        color: $accent;
+        max-width: 370px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    &__link {
+        @extend %rubik-500;
+        background-color: $btn;
+        padding: 22px 100px 22px 28px;
+        color: #fff;
+        font-size: 15px;
+        line-height: 18px;
+        cursor: pointer;
+        position: relative;
+        &::before {
+            content:'';
+            background-image: url('../images/slider/btn-arrow.svg');
+            position: absolute;
+            display: block;
+            height: 10px;
+            width: 25px;
+            right: 19px;
+            top: 26px;
+        }
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 206px;
+        li {
+            button {
+                border: none;
+                border-radius: 50%;
+                margin: 0 5px;
+                width: 30px;
+                height: 30px;
+                font-size: 11px;
+                @extend %rubik-500;
+                line-height: 11px;
+                color: $sliderbtn;
+                background-color: $sliderbtnbg;
+            }
+        }
+        li {
+            &.slick-active {
+                button {
+                    color: $usernum;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
 
 @import 'media';
