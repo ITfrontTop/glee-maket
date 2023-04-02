@@ -293,7 +293,7 @@
         display: none;
     }
     &__info-inner {
-        margin: 75px 0 87px;
+        margin: 75px 0 80px;
     }
     &-title {
         text-align: center;
@@ -497,7 +497,36 @@
 }
 
 
-
+.new-product {
+    padding-bottom: 120px;
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 370px);
+        grid-template-rows: repeat(2, 245px);
+        grid-gap: 30px;
+    }    
+    &__item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding: 42px 38px;
+    }
+    &__title {
+        @extend %dmsans-700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $title;
+        max-width: 175px;
+        margin-bottom: 7px;
+    }
+    &__subtitle {
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $btn;
+    }
+    
+}
 
 
 
