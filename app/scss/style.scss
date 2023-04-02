@@ -453,7 +453,7 @@
             position: absolute;
             width: 23px;
             height: 10px;
-            background-image: url('../images/arrow-btn-blue.svg');
+            background-image: url('../images/icons/arrow-btn-blue.svg');
             background-repeat: no-repeat;
             top: 19px;
             right: 19px;
@@ -525,8 +525,23 @@
         line-height: 20px;
         color: $btn;
     }
-    
 }
+
+.video-desing {
+    height: 500px;
+    background-color: #e6e6e6;
+    background-image: url('../images/video-desing-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &__inner {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 
 
