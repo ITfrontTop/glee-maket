@@ -419,6 +419,83 @@
 
 
 
+.lamp {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    &__title {
+        @extend %dmsans-700;
+        font-size: 26px;
+        line-height: 32px;
+        color: $usernum;
+        margin-bottom: 10px;
+    }
+    &__text {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $usernum;
+        margin-bottom: 40px;
+    }
+    &__link {
+        @extend %dmsans-700;
+        font-size: 15px;
+        line-height: 12px;
+        color: $accent;
+        border: 1px solid #b3b7b5;
+        border-radius: 5px;
+        padding: 15px 85px 13px 20px;
+        position: relative;
+        &:before {
+            content:'';
+            position: absolute;
+            width: 23px;
+            height: 10px;
+            background-image: url('../images/arrow-btn-blue.svg');
+            background-repeat: no-repeat;
+            top: 19px;
+            right: 19px;
+        }
+    }
+    &-left,
+    .lamp-right {
+        background-color: $pinkmedium;
+        height: 390px;
+        max-width: 870px;
+        width: 100%;
+        position: relative;
+    }
+    &-left {
+        padding: 95px 100px 95px;
+        &__img {
+        position: absolute;
+        top: -122px;
+        left: 142px;
+        }
+        &__content {
+            max-width: 335px;
+            margin-left: auto;
+            padding-right: 50px;
+        }
+    }
+    &-right {
+        padding: 80px 100px 100px 80px;
+        &__img {
+            position: absolute;
+            top: -95px;
+            left: 147px;
+        }
+        &__content {
+            max-width: 300px;
+            margin-left: auto;
+            padding-right: 40px;
+        }
+    }
+
+}
+
 
 
 
