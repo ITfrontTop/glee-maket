@@ -543,6 +543,88 @@
 }
 
 
+.idea {
+    position: relative;
+    &__top {
+        padding: 115px 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-link {
+            @extend %dmsans-700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #262626;
+            padding-right: 25px;
+            position: relative;
+            &:after {
+                content:'';
+                position: absolute;
+                width: 8px;
+                height: 14px;
+                background-image: url('../images/icons/view-arrow.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                right: 0px;
+                top: 2px;
+            }
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 370px;
+        width: 100%;
+        border-radius: 3px;
+        position: relative;
+        & + .idea__item {
+            margin-left: 30px;
+        }
+        &-btn {
+            position: absolute;
+            @extend %poppins-700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+            background-color: $btn;
+            padding: 10px 30px 9px;
+            border-radius: 20px;
+            bottom: 165px;
+            left: 28px;
+        }
+        &-text {
+            @extend %dmsans-500;
+            font-size: 18px;
+            color: #262626;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 30px 31px 18px;
+            height: 120px;
+        }
+        &-publication {
+            display: flex;
+            padding: 22px 35px;
+            &-data {
+                &+.idea__item-publication-admin {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+
+.partners {
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 266px;
+        background-color: $pinklight;
+    }
+}
+
+
 
 
 @import 'media';
