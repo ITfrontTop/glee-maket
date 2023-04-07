@@ -35,34 +35,53 @@
 
 .user-nav {
     display: flex;
+    align-items: center;
     &__link {
         position: relative;
-        background-color: $pink;
     }
 
     &__link .user-nav__img {
-        padding: 20px 17px 14px 17px;
+        padding: 20px 17px 12px 17px;
     }
 
-    &__link-search {
+    &__link-inner {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 50px;
+        background-color: $pink;
+    }
+
+    &__link.user-nav__link-search img {
         background-color: #edf1f4;
         margin-right: 21px;
         width: 51px;
+        height: 51px;
         border-radius: 50%;
-        align-items: center;
+        padding: 12px 16px 10px 17px;
     }
-
     &__link-heart {
-        border-radius: 50% 0 0 50%;
+        padding-left: 14px;
+        padding-right: 12px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 32px;
+            background-color: #fde7d3;
+            top: 8px;
+            right: 0;
+        }
     }
 
     &__link-cart {
-        border-radius: 0 50% 50% 0;
+        padding-left: 12px;
+        padding-right: 14px;
     }
-    &__link.user-nav__link-menu {
-        background-color: $btn;
-        margin-left: 18px;
-        border-radius: 50%;
+
+    &__link.user-nav__link-menu img{
+        background-color: #fff;
+        padding: 0 0 0 18px;
     }
 
     &__num {
@@ -75,8 +94,8 @@
         border-radius: 50%;
         background-color: #fff;
         text-align: center;
-        top: 10px;
-        right: 8px;
+        top: 12px;
+        right: 20px;
     }
 }
 
@@ -158,6 +177,21 @@
         padding-left: 30px;
     }
 }
+
+
+.top {
+    &__inner {
+        background-color: #edf1f4;
+        padding: 35px 0;
+        text-align: center;
+    }
+    &__title {
+        @extend %rubik-300;
+        color: $option;
+        font-size: 36px;
+    }
+}
+
 
 
 .top-slider {
@@ -623,6 +657,9 @@
         background-color: $pinklight;
     }
 }
+
+
+
 
 
 
