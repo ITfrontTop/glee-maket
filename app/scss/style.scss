@@ -640,8 +640,34 @@
             display: flex;
             padding: 22px 35px;
             &-data {
+                padding-left: 27px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url('../images/icons/time.svg');
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    top: -2px;
+                    left: 0;
+                }
                 &+.idea__item-publication-admin {
-                    margin-left: 30px;
+                    margin-left: 16px;
+                }
+            }
+            &-admin {
+                padding-left: 27px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url('../images/icons/user-grey.svg');
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    top: -2px;
+                    left: 0;
                 }
             }
         }
