@@ -685,7 +685,72 @@
 }
 
 
+.modal {
+    padding: 116px 0 120px;
+    max-width: 470px;
+    margin: 0 auto;
+    &__label {
+        @extend %rubik-400;
+        color: #436372;
+        font-size: 14px;
+        line-height: 18px;
+        
+    }
+    &__input {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #f6f6f6;
+        margin: 10px 0 25px;
+        padding: 0 15px;
+    }
+    &__btn {
+        background-color: $btn;
+        color: #fffefe;
+        @extend %rubik-500;
+        font-size: 18px;
+        width: 100%;
+        padding: 22px;
+        border: none;
+        margin-bottom: 35px;
+        cursor: pointer;
+    }
+    &__form-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 33px;
+        border-bottom: 1px solid #f6f6f6;
+        margin-bottom: 30px;
 
+    }
+    &__point-link {
+        display: block;
+        @extend %rubik-400;
+        color: #436372;
+        font-size: 14px;
+        line-height: 18px;
+        cursor: pointer;
+    }
+    &__create-link {
+        display: block;
+        @extend %rubik-400;
+        color: #436372;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        padding-bottom: 22px;
+        cursor: pointer;
+    }
+    &__create-btn {
+        display: block;
+        padding: 22px 0;
+        border: 2px solid $btn;
+        color: $usernum;
+        @extend %rubik-400;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
 
 
 
