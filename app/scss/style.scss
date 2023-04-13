@@ -1052,6 +1052,7 @@
         @extend %rubik-400;
         font-size: 16px;
         border: 1px solid $btn;
+        cursor: pointer;
         &--active {
             background-color: $btn;
             color: #fff;
@@ -1062,7 +1063,106 @@
     }
 }
 
+.product-list {
+    &__item {
+        
+    }
+    &__item-btn {
+        display: none;
+        background-color: #fff;
+    }
+    &__item-content {
+        display: flex;
+        
+    }
+    &__item-img-box {
+        width: 370px;
+        height: 540px;
+        margin-right: 60px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #f2f2f2;
+    }
+    &__info{
+        max-width: 440px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        transition: all 0.3s;
+        &:hover {
+            .product-list__item-link {
+                background-color: transparent;
+                opacity: 0;
+            }
+            .product-list__item-btn {
+                display: flex;
+                position: absolute;
+                bottom: 133px;
+                left: 0px;  
+            }
+            .product-list__item-btn-cart {
+                padding: 15px 15px 11px;
+                background-color: #fff;
+                display: block;
+                &:hover {
+                    background-color: $btn;
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+            .product-list__item-btn-heart {
+                padding: 17px 15px 11px;
+                background-color: #fff;
+                display: block;
+                &:hover {
+                    background-color: $btn;
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+            
+        }
+    }
+    &__item-title {
+        @extend %rubik-400;
+        font-size: 40px;
+        color: #333;
+        margin-bottom: 22px;
+    }
+    &__item-price {
+        margin: 32px 0 32px;
 
+    }
+    &__text {
+        font-size: 16px;
+        color: $usernum;
+        @extend %rubik-400;
+    }
+    &__item-link {
+        display: block;
+        padding: 17px 56px;
+        margin-top: 35px;
+        width: 210px;
+        text-transform: uppercase;
+        font-size: 15px;
+        @extend %rubik-400;
+        color: #fff;
+        background-color: $btn;
+        border-radius: 5px;
+    }
+}
+
+.pagination-list {
+    justify-content: flex-start;
+    .pagination__inner {
+        padding-top: 47px;
+    }
+}
 
 
 
