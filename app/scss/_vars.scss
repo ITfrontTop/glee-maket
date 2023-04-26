@@ -58,3 +58,12 @@ $pinklight: #fef7f0;
     clip: rect(0 0 0 0);
     position: absolute;
 }
+
+%btn {
+    padding: 12px 17px 12px;
+    background-color: $btn;
+    @extend %dmsans-400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
