@@ -1458,8 +1458,6 @@
         width: 275px;
         height: 70px;
         background-color: $btn;
-        left: 0;
-        bottom: 0;
         position: absolute;
         left: 0;
         bottom: 269px;
@@ -1522,6 +1520,7 @@
         @extend %rubik-500;
         padding: 17px 20px;
         position: relative;
+        cursor: pointer;
         &::after {
             content: '';
             position: absolute;
@@ -1636,11 +1635,154 @@
         font-size: 16px;
         border: 1px solid $btn;
         padding: 12px 20px;
+        cursor: pointer;
     }
     &__link--active {
         background-color: $btn;
         color: #fff;
     }
+}
+
+.blog-one {
+    margin-bottom: 60px;
+    &__img {
+        margin-bottom: 0;
+    }
+    &__box {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    &__image {
+        float: left;
+        margin-right: 30px;
+    }
+    &__content-title {
+        @extend %rubik-400;
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    &__content-subtitle {
+        @extend %rubik-500;
+        font-size: 16px;
+        color: $usernum;
+        margin-bottom: 20px;
+    }
+    &__text {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: $usernum;
+        margin-bottom: 35px;
+    }
+    &__blockquote {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: $usernum;
+        border-left: 6px solid $btn;
+        background-color: #edf1f4;
+        padding: 18px 60px 20px 40px;
+        margin-bottom: 45px;
+    }
+    &__blockquote-author {
+        padding-left: 40px;
+        margin-top: 20px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            background-color: $btn;
+            left: 0;
+            top: 9px;
+        }
+    }
+    &__subtitle {
+        @extend %rubik-500;
+        font-size: 18px;
+        color: $usernum;
+        padding-top: 25px;
+        margin-bottom: 22px;
+    }
+    &__desc {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #565872;
+        margin-bottom: 60px;
+    }
+}
+
+.blog-author {
+    margin-bottom: 60px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+    }
+    &__author {
+        display: flex;
+    }
+    &__img {
+        width: 77px;
+        height: 77px;
+        object-fit: cover;
+        margin-right: 28px;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__name {
+        @extend %rubik-500;
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    &__position {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: #666;
+    }
+    &__tags-share {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 5px;
+    }
+    &__item-title {
+        display: block;
+        width: 70px;
+        @extend %rubik-400;
+        font-size: 16px;
+        color: #333;
+    }
+    &__item-text,
+    &__item-img {
+        width: 140px;
+    }
+    &__item-text {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: #999;
+    }
+    &__item-img {
+        display: flex;
+        align-items: center;
+    }
+    &__images {
+        & + .blog-author__images {
+            margin-left: 25px;
+        }
+    }
+    
 }
 
 
