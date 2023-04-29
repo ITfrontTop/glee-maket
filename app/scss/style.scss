@@ -2099,7 +2099,161 @@
     object-fit: cover;
 }
 
-  
+
+.mission {
+    margin: 120px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image {
+        margin-right: 50px;
+    }
+    &__img {
+        width: 570px;
+        height: 675px;
+        object-fit: cover;
+    }
+    &__info {
+        width: 550px;
+    }
+    &__top {
+        display: flex;
+        margin: 80px 0 40px;
+    }
+    &__num {
+        margin-right: 30px;
+    }
+    &__num-text {
+        @extend %poppins-700;
+        font-size: 140px;
+        line-height: 114px;
+        color: $btn;
+    }
+    &__sing {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+    &__sing-text {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $usernum;
+    }
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $usernum;
+        margin-bottom: 40px;
+    }
+    &__text {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: $usernum;
+        padding-bottom: 60px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 2px;
+            background-color: #e6eaf0;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+
+    &__progress-items {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        padding-top: 30px;
+    }
+
+    &__progress-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & + .mission__progress-item {
+        margin-left: 30px;
+    }
+    &__progress-img {
+        margin-right: 15px;
+    }
+    &__progress-box {
+        width: 100px;
+    }
+    &__progress-title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $usernum;
+    }
+    &__progress-subtitle {
+        @extend %rubik-500;
+    }
+    &__progress-revenue {
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 1px;
+            background-color: #e6eaf0;
+        }
+        &::before {
+            top: -4px;
+            left: -28px;
+        }
+        &::after {
+            top: -4px;
+            right: -12px;
+        }
+    }
+}
+
+.statistics {
+    background-color: $pink;
+    height: 320px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 320px;
+    }
+    &__img-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img {
+        display: inline-block;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        & + .statistics__item {
+            margin-left: 30px;
+        }
+    }
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $usernum;
+        margin: 15px 0 10px;
+    }
+    &__subtitle {
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: $usernum;
+    }
+}
+
 
 
 
