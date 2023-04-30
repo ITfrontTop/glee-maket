@@ -2218,6 +2218,7 @@
 .statistics {
     background-color: $pink;
     height: 320px;
+    margin-bottom: 120px;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -2254,7 +2255,143 @@
     }
 }
 
+.team {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 295px;
+        margin-right: 100px;
+    }
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $usernum;
+        margin-bottom: 25px;
+    }
+    &__text {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $usernum;
+        margin-bottom: 35px;
+    }
+    &__link {
+        display: inline-block;
+        @extend %poppins-700;
+        font-size: 15px;
+        color: #fff;
+        padding: 16px 63px 16px 15px;
+        background-color: $btn;
+        border-radius: 5px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 11px;
+            background-image: url('../images/icons/arrows-right-white.svg');
+            top: 22px;
+            right: 28px;
+        }
+    }
+    &__items {
+        width: 770px;
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
+        grid-template-rows: repeat(2, 380px);
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+    &__img-box {
+        width: 370px;
+        height: 320px;
+    }
+    &__img {
+        object-fit: cover;
+    }
+    &__item {
+        position: relative;
+    }
+    &__wrapper {
+        width: 325px;
+        height: 116px;
+        background-color: #fff;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 68%;
+        left: 0;
+    }
+    &__name {
+        @extend %dmsans-700;
+        font-size: 22px;
+        color: #436372;
+        margin-bottom: 7px;
+    }
+    &__position {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: #565872;
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 41px;
+        height: 41px;
+        background-color: #f6f6f6;
+        border-radius: 50%;
+        & + .team__social-link {
+            margin-left: 8px;
+        }
+    }
 
+}
+
+.terms {
+    margin-top: 110px;
+    &__title {
+        @extend %rubik-500;
+        font-size: 24px;
+        color: $usernum;
+        margin-bottom: 20px;
+    }
+    &__text,
+    &__list {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: $usernum;
+        margin-bottom: 55px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__item {
+        padding-left: 12px;
+        margin-left: 30px;
+        position: relative;
+        &::before {
+            content: '0';
+            position: absolute;
+            left: -25px;
+        }
+        & + .terms__item {
+            margin-top: 20px;
+        }
+    }
+}
+
+  
 
 
 
