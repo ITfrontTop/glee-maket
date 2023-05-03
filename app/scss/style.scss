@@ -18,10 +18,12 @@
 }
 
 .menu {
+    &__btn {
+        display: none;
+    }
     &__list {
         display: flex;
     }
-
     &__list-item+.menu__list-item {
         padding-left: 33px;
     }

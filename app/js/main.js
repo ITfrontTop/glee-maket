@@ -1,5 +1,10 @@
 $(function(){
 
+    $('.menu__btn').on('click', function(e){
+        e.preventDefault();
+        $('.menu__list').toggleClass('menu__list--active');
+    });
+
     $('.pagination-blog__link').on('click', function(e){
         e.preventDefault();
         $('.pagination-blog__link').removeClass('pagination-blog__link--active');
