@@ -89,13 +89,51 @@
             justify-content: center;
         }
     }
+    .mission {
+        &__img {
+            width: 470px;
+            height: 575px;
+        }
+        &__num-text {
+            font-size: 100px;
+            line-height: 90px;
+        }
+        &__title {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+        &__text {
+            padding-bottom: 40px;
+        }
+        &__progress-title {
+            font-size: 25px;
+        }
+    }
 }
 
 @media (max-width: 1160px) {
     .shop-content {
         &__items {
             justify-content: center;
-            
+        }
+    }
+    .mission {
+        &__inner {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__image {
+            margin-left: 0;
+        }
+    }
+    .team {
+        &__items {
+            grid-template-columns: repeat(1, 370px);
+        }
+        &__info {
+            margin-right: 20px;
+            margin-bottom: 15px;
         }
     }
 }
@@ -290,6 +328,17 @@
             }
         }
     }
+    .team {
+        &__inner {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__items {
+            align-items: center;
+            width: auto;
+        }
+    }
 }
 
 @media (max-width: 650px) {
@@ -327,6 +376,51 @@
     .product-list {
         &__item-title {
             font-size: 25px;
+        }
+    }
+    .mission {
+        &__info {
+            max-width: 550px
+        }
+        &__progress-items {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+        }
+        &__progress-item {
+            padding: 10px 0;
+        }
+        &__text {
+            padding-bottom: 0;
+            margin-bottom: 5px;
+            &::before {
+                display: none;
+            }
+        }
+        &__progress-revenue {
+            &::before {
+                display: none;
+            }
+        }
+        &__progress-revenue {
+            &::after {
+                display: none;
+            }
+        }
+        &__info {
+            max-width: 100%;
+        }
+        &__img {
+            display: none;
+        }
+    }
+    .statistics {
+        height: 350px;
+        margin-bottom: 60px;
+        &__inner {
+            flex-wrap: wrap;
+            padding: 15px;
         }
     }
 }
@@ -391,6 +485,21 @@
     }
     .idea__item+.idea__item {
         margin-left: 0;
+    }
+    .statistics {
+        height: 650px;
+        &__inner {
+            align-items: center;
+            justify-content: center;
+        }
+        &__item {
+            margin: 0 30px;
+        }
+    }
+    .mission {
+        &__top {
+            margin: 20px 0 40px;
+        }
     }
 }
 
@@ -466,6 +575,27 @@
     .product-list__item-img-box {
         width: 205px;
         height: 320px;
+    }
+    .team {
+        &__img-box {
+            width: 325px;
+            height: 320px;
+        }
+        &__wrapper {
+            width: 290px;
+        }
+    }
+    .team {
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+        &__img-box {
+            margin-left: 0;
+        }
+        &__items {
+            display: none;
+        }
     }
 }
 
