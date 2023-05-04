@@ -1,5 +1,10 @@
 $(function(){
 
+    $('.filter-btn').on('click', function(e){
+        e.preventDefault();
+        $('.shop-filter').toggleClass('shop-filter__active');
+    });
+
     $('.menu__btn').on('click', function(e){
         e.preventDefault();
         $('.menu__list').toggleClass('menu__list--active');
