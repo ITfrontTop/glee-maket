@@ -18,10 +18,12 @@
 }
 
 .menu {
+    &__btn {
+        display: none;
+    }
     &__list {
         display: flex;
     }
-
     &__list-item+.menu__list-item {
         padding-left: 33px;
     }
@@ -1037,6 +1039,10 @@
         font-size: 14px;
         @extend %rubik-400;
     }
+}
+
+.filter-btn {
+    display: none;
 }
 
 .shop-content {
